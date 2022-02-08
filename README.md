@@ -1,4 +1,4 @@
-# Movies-ETL By David Mathney on 02/26/2022
+# Movies-ETL By David Matheny on 02/26/2022
 
 # Notes:  
 Since I couldnt install Postgres locally I had to use an Azure instance.  This caused issues with the to_sql from the library from sqlalchemy import create_engine.  The create_engine only works with a local instance of Postges, so instead I had to insert the data into the database with psycopg2, which was much more challenging. Hardest part was finding the right batchsize for ratings. 
